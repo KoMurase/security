@@ -47,7 +47,7 @@ def Attack2(cipher):
                             tmp_key = "VIGENERE"+letter_1 + letter_2 + letter_3 + letter_4
                             tmp_plain = Dec(cipher, tmp_key, TableGen())
                             #if ("l" in tmp_plain[4]) and ("l" in tmp_plain[5]) and ("i" in tmp_plain[6]) and ("g" in tmp_plain[7]):
-                            if ("e" in tmp_plain[8]) and ("n" in tmp_plain[9]) and ("t" in tmp_plain[10]) and ("i" in tmp_plain[11]):
+                            if ("e" in tmp_plain[8]) and ("n" in tmp_plain[9]) and ("t" in tmp_plain[10]) :#and ("i" in tmp_plain[11]):
                                 print("Key might be {}".format(tmp_key))
                                 print("Plaintext might be {}".format(tmp_plain[:40] + "..."))
                                 print(tmp_plain[0:])
